@@ -2,7 +2,7 @@ mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
     container: 'cluster-map',
     style: 'mapbox://styles/mapbox/dark-v11',
-    center: [-103.5917, 40.6699],
+    center: [75.7139, 19.7515],
     zoom: 3
 });
 
@@ -13,8 +13,8 @@ map.addSource('campgrounds', {
     type: 'geojson',
     data: campgrounds,
     cluster: true,
-    clusterMaxZoom: 14, // Max zoom to cluster points on
-    clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
+    clusterMaxZoom: 14,
+    clusterRadius: 50 
 });
 
 map.addLayer({
